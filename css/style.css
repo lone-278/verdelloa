@@ -1,0 +1,243 @@
+/* ----폰트 불러오기---- */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Thin.woff') format('woff');
+  font-weight: 100;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Light.woff') format('woff');
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+  font-weight: 900;
+  font-display: swap;
+}
+
+.os-r {font-family: "Oleo Script", system-ui; font-weight: 400;}
+
+.os-b {font-family: "Oleo Script", system-ui; font-weight: 700;}
+
+.oss-r {font-family: "Oleo Script Swash Caps", system-ui; font-weight: 400;}
+
+.oss-b {font-family: "Oleo Script Swash Caps", system-ui; font-weight: 700;}
+
+
+/* ----노멀라이즈---- */
+*{letter-spacing: -0.016em;}
+body,ul,li{margin: 0; padding: 0; list-style: none;}
+body{font-family: 'Pretendard', sans-serif;}
+p,h1,h2,h3,h4,h5,h6 {margin: 0; font-weight: normal; font-size: inherit;}
+a{color: inherit; text-decoration: none;}
+
+/* ----라이브러리---- */
+.fw-100{font-weight: 100;}
+.fw-200{font-weight: 200;}
+.fw-300{font-weight: 300;}
+.fw-400{font-weight: 400;}
+.fw-500{font-weight: 500;}
+.fw-600{font-weight: 600;}
+.fw-700{font-weight: 700;}
+.fw-800{font-weight: 800;}
+.fw-900{font-weight: 900;}
+
+.fs-10{font-size: 10px;}
+.fs-11{font-size: 11px;}
+.fs-12{font-size: 12px;}
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.fs-18{font-size: 18px;}
+.fs-20{font-size: 20px;}
+.fs-21{font-size: 21px;}
+.fs-24{font-size: 24px;}
+.fs-26{font-size: 26px;}
+.fs-28{font-size: 28px;}
+.fs-30{font-size: 30px;}
+.fs-31{font-size: 31px;}
+.fs-32{font-size: 32px;}
+.fs-34{font-size: 34px;}
+.fs-38{font-size: 38px;}
+.fs-40{font-size: 40px;}
+.fs-42{font-size: 42px;}
+.fs-46{font-size: 46px;}
+.fs-48{font-size: 48px;}
+.fs-50{font-size: 50px;}
+.fs-52{font-size: 52px;}
+.fs-54{font-size: 54px;}
+.fs-56{font-size: 56px;}
+.fs-58{font-size: 58px;}
+.fs-62{font-size: 62px;}
+.fs-64{font-size: 64px;}
+.fs-68{font-size: 68px;}
+.fs-72{font-size: 72px;}
+.fs-80{font-size: 80px;}
+
+.fc-fff{color: #fff;}
+.fc-ff5{color: #FFFEF5;}
+.fc-3e2{color: #3E2214;}
+.fc-8a5{color: #8A552D;}
+.fc-b79{color: #B79C88;}
+.fc-97b{color: #97BE0B;}
+.fc-ffd{color: #FFD001;}
+.fc-f8c{color: #F8C51E;}
+.fc-eca{color: #ECAF23;}
+
+.lh-15{line-height: 1.5;}
+.lh-16{line-height: 1.6;}
+.lh-17{line-height: 1.7;}
+.lh-2{line-height: 2;}
+
+
+/* --패딩-- */
+.pt-4{padding-top: 4px;}
+.pt-8{padding-top: 8px;}
+.pt-10{padding-top: 10px;}
+.pt-12{padding-top: 12px;}
+.pt-16{padding-top: 16px;}
+.pt-20{padding-top: 20px;}
+.pt-24{padding-top: 24px;}
+.pt-28{padding-top: 28px;}
+.pt-32{padding-top: 32px;}
+.pt-36{padding-top: 36px;}
+.pt-40{padding-top: 40px;}
+
+.pl-4{padding-left: 4px;}
+.pl-8{padding-left: 8px;}
+.pl-10{padding-left: 10px;}
+.pl-12{padding-left: 12px;}
+.pl-16{padding-left: 16px;}
+.pl-20{padding-left: 20px;}
+.pl-24{padding-left: 24px;}
+.pl-28{padding-left: 28px;}
+.pl-32{padding-left: 32px;}
+.pl-36{padding-left: 36px;}
+.pl-40{padding-left: 40px;}
+
+.pr-4{padding-right: 4px;}
+.pr-8{padding-right: 8px;}
+.pr-10{padding-right: 10px;}
+.pr-12{padding-right: 12px;}
+.pr-16{padding-right: 16px;}
+.pr-20{padding-right: 20px;}
+.pr-24{padding-right: 24px;}
+.pr-28{padding-right: 28px;}
+.pr-32{padding-right: 32px;}
+.pr-36{padding-right: 36px;}
+.pr-40{padding-right: 40px;}
+
+.pb-4{padding-bottom: 4px;}
+.pb-8{padding-bottom: 8px;}
+.pb-10{padding-bottom: 10px;}
+.pb-12{padding-bottom: 12px;}
+.pb-16{padding-bottom: 16px;}
+.pb-20{padding-bottom: 20px;}
+.pb-24{padding-bottom: 24px;}
+.pb-28{padding-bottom: 28px;}
+.pb-32{padding-bottom: 32px;}
+.pb-36{padding-bottom: 36px;}
+.pb-40{padding-bottom: 40px;}
+
+/* 여백/마진 */
+.mt-4{margin-top: 4px;}
+.mt-8{margin-top: 8px;}
+.mt-10{margin-top: 10px;}
+.mt-12{margin-top: 12px;}
+.mt-16{margin-top: 16px;}
+.mt-20{margin-top: 20px;}
+.mt-24{margin-top: 24px;}
+.mt-28{margin-top: 28px;}
+.mt-32{margin-top: 32px;}
+.mt-36{margin-top: 36px;}
+.mt-40{margin-top: 40px;}
+
+.ml-4{margin-left: 4px;}
+.ml-8{margin-left: 8px;}
+.ml-10{margin-left: 10px;}
+.ml-12{margin-left: 12px;}
+.ml-16{margin-left: 16px;}
+.ml-20{margin-left: 20px;}
+.ml-24{margin-left: 24px;}
+.ml-28{margin-left: 28px;}
+.ml-32{margin-left: 32px;}
+.ml-36{margin-left: 36px;}
+.ml-40{margin-left: 40px;}
+
+.mr-4{margin-right: 4px;}
+.mr-8{margin-right: 8px;}
+.mr-10{margin-right: 10px;}
+.mr-12{margin-right: 12px;}
+.mr-16{margin-right: 16px;}
+.mr-20{margin-right: 20px;}
+.mr-24{margin-right: 24px;}
+.mr-28{margin-right: 28px;}
+.mr-32{margin-right: 32px;}
+.mr-36{margin-right: 36px;}
+.mr-40{margin-right: 40px;}
+
+.mb-4{margin-bottom: 4px;}
+.mb-8{margin-bottom: 8px;}
+.mb-10{margin-bottom: 10px;}
+.mb-12{margin-bottom: 12px;}
+.mb-16{margin-bottom: 16px;}
+.mb-20{margin-bottom: 20px;}
+.mb-24{margin-bottom: 24px;}
+.mb-28{margin-bottom: 28px;}
+.mb-32{margin-bottom: 32px;}
+.mb-36{margin-bottom: 36px;}
+.mb-40{margin-bottom: 40px;}
+.mb-150{margin-bottom: 150px;}
+
+.img-box > img {
+  width: 100%;
+  display: block;
+}

@@ -1,0 +1,11 @@
+/* 검색창 아이콘 */
+/* <span class="seach-icon material-symbols-outlined">search</span> */
+.seach-icon {
+  color: #fff; font-size: 20px;
+}
+
+/* 장바구니 아이콘 */
+/* <span class="bag-icon material-symbols-outlined">local_mall</span> */
+.bag-icon {
+  color: #fff; font-size: 20px;
+}
