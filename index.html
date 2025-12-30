@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
   <link rel="stylesheet" href="css/media.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="script.js"></script>
-  
+
   <!-- 구글심볼 불러오기 -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
@@ -27,32 +29,35 @@
 
 <body>
   <div class="wrap">
+    <!-- 상단바 -->
     <nav>
-     <div class="l-box">
+      <div class="l-box">
         <div class="logo-box">
-         <a href="#">
-          <img src="img/m-logo.svg" class="w-logo" alt="베르델로아">
-          <img src="img/mh-logo.svg" class="c-logo" alt="베르델로아">
-        </a>
+          <a href="#">
+            <img src="img/m-logo.svg" class="w-logo" alt="베르델로아">
+            <img src="img/mh-logo.svg" class="c-logo" alt="베르델로아">
+          </a>
         </div>
         <ul class="menu-box">
           <li><a href="#" class="fc-fff fs-18 fw-500">베르델로아</a></li>
           <li><a href="#" class="fc-fff fs-18 fw-500">제품</a></li>
           <li><a href="#" class="fc-fff fs-18 fw-500">소식</a></li>
         </ul>
-     </div>
+      </div>
       <div class="r-box">
         <a href="#"><span class="seach-icon material-symbols-outlined">search</span></a>
         <a href="#"><span class="bag-icon material-symbols-outlined">local_mall</span></a>
+        <a href="#"><span class="menu-icon material-symbols-outlined">dehaze</span></a>
       </div>
     </nav>
+    <!-- 슬라이드 배너 -->
     <div class="top">
       <ul>
         <li class="s1">
           <a href="#">
             <div class="text">
               <h2 class="fs-18 fw-400 fc-fff">event</h2>
-              <p class="ty fc-fff os-b fs-50">
+              <p class="ty fc-fff os-b fs-50 mainment">
                 Valentine’s Day<br>
                 Gift - Set Special Exhibition
               </p>
@@ -64,19 +69,20 @@
         <li class="s2">
           <a href="#">
             <div class="text">
-             <p class="ty fc-fff oss-b fs-50">
+              <p class="ty fc-fff oss-b fs-50 mainment">
                 With purpose<br>
                 a different approach to chocolate,<br>
                 where pistachio reshapes the taste.
-             </p>
-             <p class="fc-fff fs-18 fw-400">
-               피스타치오로 완성한 부드럽고 담백한 초콜릿 바
-             </p>
+              </p>
+              <p class="fc-fff fs-18 fw-400">
+                피스타치오로 완성한 부드럽고 담백한 초콜릿 바
+              </p>
             </div>
           </a>
         </li>
       </ul>
     </div>
+    <!-- 브랜드 소개 -->
     <div class="container1">
       <div class="top-box">
         <img src="img/brandstory.png" alt="오렌지나무">
@@ -86,7 +92,7 @@
           <div class="title">
             <h2 class="os-b fw-18 fc-ffd">Brand Story</h2>
           </div>
-          <p class="oss-b fc-97b fs-50">
+          <p class="oss-b fc-97b fs-50 mainment">
             We dream of<br>
             a sustainable future
           </p>
@@ -94,11 +100,11 @@
         <div class="text-bottom">
           <p class="fs-18 fw-300 lh-2">
             베르델로아는 지속가능한 미래를 잇는 친환경 초콜릿 브랜드입니다<br>
-            카카오의 사용을 줄이고, 자연에서 온 대체재로 완성한 베르델로아의 초콜릿은<br>
+            카카오의 사용을 줄이고, 자연에서 온 대체재로 완성한 베르델로아의<br class="none4"> 초콜릿은<br class="none3">
             지구를 생각하고 건강을 지키며 감각적인 맛을 전합니다<br>
             <br>
-            우리가 사용하는 모든 원료는 자연에서 온 것들로, 유기농 재배와 공정 무역을 기본으로 하며<br>
-            포장재 역시 생분해성 또는 재활용 가능한 소재를 사용합니다<br>
+            우리가 사용하는 모든 원료는 자연에서 온 것들로, 유기농 재배와 공정<br class="none4"> 무역을 기본으로 하며<br class="none3">
+            포장재 역시 생분해성 또는 재활용 가능한<br class="none4"> 소재를 사용합니다<br>
             맛은 물론, 생산과 유통의 모든 과정에서 지구를 생각하며 움직입니다<br>
             <br>
             푸른 시대를 위한 새로운 달콤함, 지금 베르델로아와 함께하세요
@@ -111,6 +117,7 @@
         </div>
       </div>
     </div>
+    <!-- 제품페이지 -->
     <div class="container2">
       <div class="content">
         <div class="title-box">
@@ -119,106 +126,111 @@
         <div class="c-box">
           <ul>
             <li><a href="#">
-              <div class="pro-box"><img src="img/pro1.png" alt="라즈베리박스"></div>
-              <div class="cost-box">
-                <p class="fs-18 fw-400">베르델로아 초콜릿 박스 (라즈베리)</p>
-                <div class="cost">
-                 <p class="fs-16 fw-300">15,000원</p>
-                 <del class="fs-16 fw-300 fc-b79">18,000원</del>
-                 <p class="fs-16 fw-300 fc-eca">20%</p>
+                <div class="pro-box"><img src="img/pro1.png" alt="라즈베리박스"></div>
+                <div class="cost-box">
+                  <p class="fs-18 fw-400">베르델로아 초콜릿 박스 (라즈베리)</p>
+                  <div class="cost">
+                    <p class="fs-16 fw-300">15,000원</p>
+                    <del class="fs-16 fw-300 fc-b79">18,000원</del>
+                    <p class="fs-16 fw-300 fc-eca">20%</p>
+                  </div>
                 </div>
-              </div>
-            </a></li>
+              </a></li>
             <li><a href="#">
-              <div class="pro-box"><img src="img/pro2.png" alt="블루베리틴"></div>
-              <div class="cost-box">
-                <p class="fs-18 fw-400">베르델로아 초콜릿 틴 (블루베리)</p>
-                <div class="cost">
-                 <p class="fs-16 fw-300">21,300원</p>
-                 <del class="fs-16 fw-300 fc-b79">26,500원</del>
-                 <p class="fs-16 fw-300 fc-eca">20%</p>
+                <div class="pro-box"><img src="img/pro2.png" alt="블루베리틴"></div>
+                <div class="cost-box">
+                  <p class="fs-18 fw-400">베르델로아 초콜릿 틴 (블루베리)</p>
+                  <div class="cost">
+                    <p class="fs-16 fw-300">21,300원</p>
+                    <del class="fs-16 fw-300 fc-b79">26,500원</del>
+                    <p class="fs-16 fw-300 fc-eca">20%</p>
+                  </div>
                 </div>
-              </div>
-            </a></li>
+              </a></li>
             <li><a href="#">
-              <div class="pro-box"><img src="img/pro3.png" alt="오렌지틴"></div>
-              <div class="cost-box">
-                <p class="fs-18 fw-400">베르델로아 초콜릿 틴 (오렌지)</p>
-                <div class="cost">
-                 <p class="fs-16 fw-300">21,300원</p>
-                 <del class="fs-16 fw-300 fc-b79">26,500원</del>
-                 <p class="fs-16 fw-300 fc-eca">20%</p>
+                <div class="pro-box"><img src="img/pro3.png" alt="오렌지틴"></div>
+                <div class="cost-box">
+                  <p class="fs-18 fw-400">베르델로아 초콜릿 틴 (오렌지)</p>
+                  <div class="cost">
+                    <p class="fs-16 fw-300">21,300원</p>
+                    <del class="fs-16 fw-300 fc-b79">26,500원</del>
+                    <p class="fs-16 fw-300 fc-eca">20%</p>
+                  </div>
                 </div>
-              </div>
-            </a></li>
+              </a></li>
             <li><a href="#">
-              <div class="pro-box"><img src="img/pro4.png" alt="피스타치오바"></div>
-              <div class="cost-box">
-                <p class="fs-18 fw-400">베르델로아 초콜릿 바 (피스타치오)</p>
-                <div class="cost">
-                 <p class="fs-16 fw-300">2,030원</p>
-                 <del class="fs-16 fw-300 fc-b79">2,300원</del>
-                 <p class="fs-16 fw-300 fc-eca">10%</p>
+                <div class="pro-box"><img src="img/pro4.png" alt="피스타치오바"></div>
+                <div class="cost-box">
+                  <p class="fs-18 fw-400">베르델로아 초콜릿 바 (피스타치오)</p>
+                  <div class="cost">
+                    <p class="fs-16 fw-300">2,030원</p>
+                    <del class="fs-16 fw-300 fc-b79">2,300원</del>
+                    <p class="fs-16 fw-300 fc-eca">10%</p>
+                  </div>
                 </div>
-              </div>
-            </a></li>
+              </a></li>
           </ul>
         </div>
       </div>
+      <!-- 중간 여백 -->
       <div class="img-box">
         <img src="img/logo-c.png" alt="로고이미지">
         <p class="fs-20 fw-300 lh-2">
-          우리는 환경과 조화를 이루는 방법으로, 진정한 달콤함이 무엇인지<br>
-          끊임없이 고민합니다. 그 결과물은 입 안에서 사라지지만, 그 철학은 당신의 선택 안에 오래 남을 것입니다
+          우리는 환경과 조화를 이루는 방법으로, <br class="none5">진정한 달콤함이 무엇인지<br class="none6">
+          끊임없이 고민합니다. 그 결과물은<br class="none5"> 입 안에서 사라지지만, 그 철학은 당신의 선택 안에 오래 남을 것입니다
         </p>
         <div class="backg-img">
           <img class="bi-4" src="img/back-4.png" alt="배경이미지">
         </div>
-      </div>   
-      <div class="backg-img">
-        <img class="bi-3" src="img/back-3.png" alt="배경이미지">
+        <div class="backg-img">
+          <img class="bi-3" src="img/back-3.png" alt="배경이미지">
+        </div>
       </div>
     </div>
+    <!-- 카테고리 -->
     <div class="container3">
       <div class="title-box">
         <h2 class="os-b fs-30 fc-97b">FLAVOR</h2>
       </div>
-      <div class="flavor">
-        <div class="f-left-box">
-          <a href="#">
-            <img src="img/flavor1.png" alt="피스타치오">
-            <span class="back-bg"></span>
-            <span class="hover-txt os-b fs-40 fc-fff">PISTACHIO</span>
-          </a>
-        </div>
-        <div class="f-right-box">
-          <div class="f-top-box">
+      <div class="flavor-wrap">
+        <div class="flavor">
+          <div class="f-left-box f-item">
             <a href="#">
-              <img class="i1" src="img/flavor2.png" alt="오렌지">
+              <img src="img/flavor1.png" alt="피스타치오">
               <span class="back-bg"></span>
-              <span class="hover-txt os-b fs-40 fc-fff">ORANGE</span>
-            </a>
-            <a href="#">
-              <img class="i2" src="img/flavor3.png" alt="헤이즐넛">
-              <span class="back-bg"></span>
-              <span class="hover-txt os-b fs-40 fc-fff">HAZELNUT</span>
+              <span class="hover-txt os-b fs-40 fc-fff">PISTACHIO</span>
             </a>
           </div>
-          <div class="f-bottom-box">
-            <a href="#">
-              <img class="i3" src="img/flavor4.png" alt="블루베리">
-              <span class="back-bg"></span>
-              <span class="hover-txt os-b fs-40 fc-fff">BLUEBERRY</span>
-            </a>
-            <a href="#">
-              <img class="i4" src="img/flavor5.png" alt="라즈베리">
-              <span class="back-bg"></span>
-              <span class="hover-txt os-b fs-40 fc-fff">RASPBERRY</span>
-            </a>
+          <div class="f-right-box f-item">
+            <div class="f-top-box">
+              <a href="#">
+                <img class="f1" src="img/flavor2.png" alt="오렌지">
+                <span class="back-bg"></span>
+                <span class="hover-txt os-b fs-40 fc-fff">ORANGE</span>
+              </a>
+              <a href="#">
+                <img class="f2" src="img/flavor3.png" alt="헤이즐넛">
+                <span class="back-bg"></span>
+                <span class="hover-txt os-b fs-40 fc-fff">HAZELNUT</span>
+              </a>
+            </div>
+            <div class="f-bottom-box">
+              <a href="#">
+                <img class="f3" src="img/flavor4.png" alt="블루베리">
+                <span class="back-bg"></span>
+                <span class="hover-txt os-b fs-40 fc-fff">BLUEBERRY</span>
+              </a>
+              <a href="#">
+                <img class="f4" src="img/flavor5.png" alt="라즈베리">
+                <span class="back-bg"></span>
+                <span class="hover-txt os-b fs-40 fc-fff">RASPBERRY</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <!-- 푸터 -->
     <footer>
       <div class="f-logo">
         <img src="img/f-logo.png" alt="푸터로고">
@@ -226,23 +238,24 @@
       <div class="copy">
         <div class="l-copy fs-16 fw-100 fc-fff lh-2">
           <span>주식회사 베르델로아</span><span class="bar">|</span><span>대표자 : 민지수</span><span class="bar">|</span>
-          <span>사업자 등록번호 : 542-65-00000</span><span class="bar">|</span><span>통신판매업 신고 : 제 2025-대전-00000호 [사업자정보확인]</span><br>
-          <span>전화: 070-5684-0000</span><span class="bar">|</span><span>주소 : 대전광역시 대덕구 동춘당로 24번길 54 8층</span><span class="bar">|</span>
-          <span>개인정보보호책임자 : 민지수</span><span class="bar">|</span><span>Fax. 042-8555-0000</span><span class="bar">|</span><span>verdelloa@gmail.com</span>
+          <span>사업자 등록번호 : 542-65-00000</span><br class="none1"><span class="bar-1">|</span><span>통신판매업 신고 : 제 2025-대전-00000호 [사업자정보확인]</span><br class="none2">
+          <span class="bar-2">|</span><span>전화: 070-5684-0000</span><span class="bar-2">|</span><br class="none1-2"><span>주소 : 대전광역시 대덕구<br class="none1-1"> 동춘당로 24번길 54 8층</span><span class="bar">|</span>
+          <span>개인정보보호책임자 : 민지수</span><span class="bar-2">|</span><br class="none1-2"><span>Fax. 042-8555-0000</span><span class="bar">|</span><span>verdelloa@gmail.com</span>
         </div>
         <div class="r-copy">
           <div class="rl-copy">
-            <p class="fc-fff fs-16 fw-300 lh-2">About</p>
-            <p class="fc-fff fs-16 fw-300 lh-2">FAQ</p>
-            <p class="fc-fff fs-16 fw-300 lh-2">Contact Us</p>
+            <a href="#"><p class="fc-fff fs-16 fw-300 lh-2">About</p></a>
+            <a href="#"><p class="fc-fff fs-16 fw-300 lh-2">FAQ</p></a>
+            <a href="#"><p class="fc-fff fs-16 fw-300 lh-2">Contact Us</p></a>
           </div>
           <div class="rr-copy">
-            <p class="fc-fff fs-16 fw-300 lh-2">Privacy Policy</p>
-            <p class="fc-fff fs-16 fw-300 lh-2">Terms Of Service</p>
+            <a href="#"><p class="fc-fff fs-16 fw-300 lh-2">Privacy Policy</p></a>
+            <a href="#"><p class="fc-fff fs-16 fw-300 lh-2">Terms Of Service</p></a>
           </div>
         </div>
       </div>
     </footer>
   </div>
 </body>
+
 </html>

@@ -13,12 +13,10 @@ $(function (){
 
   //슬라이드
   function slide (){
-    $(".top ul").animate({left: "-1920px"},2000, function (){
+    $(".top ul").stop().animate({left: "-100%"},2000, function (){
       $(".top ul").append($(".top ul li:first-child"))
       $(".top ul").css({left:0})
-
-      setTimeout (slide, 3000)
     })
   }
-  setTimeout (slide, 3000)
+  setInterval (slide, 3000)
 })

@@ -9,3 +9,9 @@
 .bag-icon {
   color: #fff; font-size: 20px;
 }
+
+/* 메뉴 아이콘 */
+/* <span class="menu-icon material-symbols-outlined">dehaze</span> */
+.menu-icon {
+  color: #fff; font-size: 20px;
+}

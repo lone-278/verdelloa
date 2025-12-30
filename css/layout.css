@@ -8,10 +8,12 @@ body{background-color: #fffef5; color: #3E2214;}
 
 .top {
   /* background-color: gray; */ 
-  overflow: hidden; position: relative; height: 1080px;
+  overflow: hidden; position: relative; height: 1080px; width: 100%;
 }
-.top ul {display: flex; width: 3840px; position: absolute; top: 0; left: 0;}
-.top ul li {position: relative; width: 1920px; height: 1080px;}
+.top ul {
+  display: flex; width: 200%; height: 100%; position: absolute; top: 0; left: 0;
+}
+.top ul li {position: relative; width: 50%; height: 100%;}
 .top ul li.s1 {background: url(../img/banner.png) no-repeat center/cover;}
 .top ul li.s2 {background: url(../img/banner2.png) no-repeat center/cover;}
 
@@ -28,7 +30,7 @@ body{background-color: #fffef5; color: #3E2214;}
 }
 .top ul li.s2 .text {
   position: absolute; bottom: 18%; left: 50%; transform: translate(-50%, 0);
-  text-align: center;
+  text-align: center; white-space: nowrap;
 }
 
 nav {
@@ -37,10 +39,14 @@ nav {
   display: flex; align-items: center; justify-content: space-between; z-index: 999;
   transition: 0.3s;
 }
+.menu-box a {display: block; height: 100%; white-space: nowrap;}
+.menu-box a:hover {color: #F0F4E5;}
 
-nav.scrolled {background-color: #FFF;}
+nav.scrolled {background-color: #FFFEF5;}
 nav.scrolled a {color: #3E2214;}
 nav.scrolled a span {color: #3E2214;}
+nav.scrolled a:hover {color: #B79C88;}
+
 
 .l-box {
   align-items: center; padding-left: 64px; display: flex; gap: 100px;
@@ -60,7 +66,8 @@ nav.scrolled .w-logo {opacity: 0;}
   padding-right: 64px; display: flex; gap: 20px; justify-content: center;
   align-items: center;
 }
-.r-box>a {display: block;}
+.seach-icon, .bag-icon {display: block;}
+.r-box .menu-icon {display: none;}
 
 
 /* ----------------------------------------------------------- */
@@ -72,21 +79,23 @@ nav.scrolled .w-logo {opacity: 0;}
   padding: 150px 0 0 0;
 }
 .top-box {
-  /* height: 500px;  */
+  height: 500px; overflow: hidden;
   border: 3px solid #3E2214;
 }
+.top-box img {object-fit: cover; width: 100%; height: 100%;}
 .bottom-box {
-  padding: 150px 48px 150px 48px; position: relative;
+  padding: 150px 48px; position: relative;
 }
 .text-top {padding: 0 0 60px 462px; display: flex; gap: 178px;}
 .title {width: 130px;}
 .title h2 {padding-top: 6px; text-align: center;}
 .text-bottom {padding-left: 770px;}
-.text-bottom p {margin-bottom: 44px;}
+.text-bottom p {margin-bottom: 44px; word-break: keep-all;}
 .text-bottom a {
   border: 2px solid #ecaf23; border-radius: 50px; display: inline-block;
   padding: 9px 36px 9px 36px;
 }
+.none4 {display: none;}
 .bi-1 {
   position: absolute; bottom: 0; left: 0; pointer-events: none;
 }
@@ -102,24 +111,27 @@ nav.scrolled .w-logo {opacity: 0;}
 .content {
   /* background-color: orange; */
   /* height: 1385px;  */
-  padding: 150px 48px 150px 48px;
+  padding: 150px 48px;
 }
-.title-box>h2 {margin-bottom: 60px;}
-.c-box {margin-top: 48px;}
+.title-box>h2 {margin-bottom: 128px;}
 .c-box ul {display: flex; gap: 24px;}
+.c-box ul>li {flex-shrink: 0;}
 .c-box ul>li>a {display: block;}
+.scroll-ind {display: none;}
 .pro-box {border: 1px solid #8A552D;}
 .pro-box img {width: 438px; height: 438px;}
-.cost-box {padding: 30px 0 30px 0;}
+.cost-box {padding: 30px 0;}
 .cost {display: flex; gap: 5px; margin-top: 12px;}
 
 .img-box {
   /* background-color: aqua; */
-  height: 394px; padding: 60px 0 60px 0; text-align: center; position: relative;
+  padding: 60px 0 60px 0; text-align: center; position: relative;
+  overflow: hidden;
 }
 .img-box > img {width: 387px; height: 150px; display: block; margin: auto;}
 .img-box p {margin-top: 44px;}
 .backg-img img {max-width: none;}
+.none5 {display: none;}
 .bi-4 {
   position: absolute; bottom: 0; left: 5%; pointer-events: none;
 }
@@ -134,7 +146,7 @@ nav.scrolled .w-logo {opacity: 0;}
 .container3 {
   /* background-color: green; */
   /* height: 1367px; */
-  padding: 150px 48px 150px 48px; 
+  padding: 150px 48px; 
 }
 /* .f-left-box {border: 3px solid #3E2214;} */
 .f-left-box img {
@@ -142,10 +154,10 @@ nav.scrolled .w-logo {opacity: 0;}
 }
 .flavor a {position: relative; display: block;}
 .flavor, .f-top-box {display: flex; gap: 24px;} 
-.i1, .i4 {
+.f1, .f4 {
   width: 438px; height: 450px; object-fit: cover; border: 3px solid #3E2214;
 }
-.i2, .i3 {
+.f2, .f3 {
   width: 900px; height: 450px; object-fit: cover; border: 3px solid #3E2214;
 }
 .back-bg {
@@ -162,15 +174,18 @@ nav.scrolled .w-logo {opacity: 0;}
 
 .f-bottom-box {display: flex; gap: 24px; margin-top: 24px;}
 
+/* ----------------------------------------------------------------- */
 
 footer {
   background-color: #97be0b;
-  height: 483px;
-  padding: 65px 48px 65px 48px;
+  padding: 65px 48px;
 }
-.f-logo {padding-bottom: 24px;}
+.f-logo {padding-bottom: 36px;}
 .f-logo img {width: 462px; height: 233px;}
 .copy {display: flex; justify-content: space-between; align-items: center;}
-.bar {margin: 0 10px;}
+.bar, .bar-1, .bar-2 {margin: 0 10px;}
+.bar-2 {display: none;}
+.none1, .none1-1,.none1-2 {display: none;}
 .r-copy {display: flex;}
+.r-copy a {display: block;}
 .rl-copy, .rr-copy  {width: 130px;}
