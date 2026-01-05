@@ -114,7 +114,7 @@ nav.scrolled .w-logo {opacity: 0;}
   padding: 150px 48px;
 }
 .title-box>h2 {margin-bottom: 128px;}
-.c-box ul {display: flex; gap: 24px;}
+.c-box ul {display: flex; gap: 24px; justify-content: center;}
 .c-box ul>li {flex-shrink: 0;}
 .c-box ul>li>a {display: block;}
 .scroll-ind {display: none;}
@@ -129,7 +129,7 @@ nav.scrolled .w-logo {opacity: 0;}
   overflow: hidden;
 }
 .img-box > img {width: 387px; height: 150px; display: block; margin: auto;}
-.img-box p {margin-top: 44px;}
+.img-box p {margin-top: 44px; word-break: keep-all;}
 .backg-img img {max-width: none;}
 .none5 {display: none;}
 .bi-4 {
@@ -153,7 +153,8 @@ nav.scrolled .w-logo {opacity: 0;}
   width: 438px; height: 924px; object-fit: cover; border: 3px solid #3E2214;
 }
 .flavor a {position: relative; display: block;}
-.flavor, .f-top-box {display: flex; gap: 24px;} 
+.flavor {display: flex; gap: 24px; justify-content: center;} 
+.f-top-box {display: flex; gap: 24px;} 
 .f1, .f4 {
   width: 438px; height: 450px; object-fit: cover; border: 3px solid #3E2214;
 }
